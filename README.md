@@ -1,0 +1,2 @@
+# mika
+nahitaji kuwa programmer
