@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Form</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/template.css">
+</head>
+<body>
+
+<div style="border:2px solid red; width:25%; padding:0 0 0 10px;">
+<p>Please fill the following form </p>
+<form action="php.php" method="POST">
+<table> 
+    <tr>
+        <td>First Name:</td><td> <input type="text" name="Fname"> </td>
+    </tr>
+    <tr>
+	   <td>Last Name:</td><td><input type="text" name="Lname"></td>
+    </tr>
+    <tr>
+	   <td colspan="2">Gender:</td>
+    </tr>
+    <tr>
+	      <td>Female: <br>
+	          Male: 
+        </td>
+        <td>
+                       <input type="radio" name="Gender" value="Female"> <br>
+                       <input type="radio" name="Gender" value="Male"> </td>
+    </tr>
+    <tr>
+        <td colspan="2">Please choose your favourite foods:</td>
+    </tr>
+    <tr>
+	   <td>
+           Steak:<br>Pizza:<br>Chicken: 
+        </td>
+        <td>
+        <input type="checkbox" name="Food" value="Steak"> <br>
+        <input type="checkbox" name="Food" value="Pizza"> <br>
+        <input type="checkbox" name="Food" value="Chicken">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+	           <textarea name="Quote" col="20" rows="5" placeholder="Enter your favourite quote!"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Select a Level of Education: <br>
+            <select name="Education">
+            <option>Jr. High</option>
+            <option>High School</option>
+            <option>College</option>
+            <option>Morning</option>
+            <option value="" selected></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+                Select your favorite time of day: <br>
+                <select name="Time">
+                <option>Morning</option>
+                <option>Day</option>
+                <option>Night</option>
+                <option value="" selected></option>
+                </select>
+        </td>
+    </tr>
+        <tr>
+        <td colspan="2" align="center">
+	        <input type="submit" name="submit" Value="Submit" style="border-radius: 10px 0 0 10px;background-color:Green;color:yellow;">
+            <input type="reset" Value="Reset" style="border-radius:0 10px 10px 0; background-color:yellow;color:white;">
+            </td>
+    </tr>
+    </table>
+</form>
+</div>
+<p><a href="show.php">View Registered member</a></p>
+
+
+</body>
+</html>
